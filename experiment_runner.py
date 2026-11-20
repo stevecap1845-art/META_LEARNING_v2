@@ -13,8 +13,8 @@ Or import and call programmatically:
 Output
 ------
 - Console logs with per-generation meta-learning progress
-- JSON results file  → results/experiment_results.json
-- PNG plots          → results/*.png
+- JSON results file  → results/experiment_runner/experiment_results.json
+- PNG plots          → results/experiment_runner/*.png
 """
 
 import json
@@ -61,7 +61,7 @@ from aad import (
     BBOB_F24_LunacekBiRastrigin,
 )
 
-RESULTS_DIR = "results"
+RESULTS_DIR = os.path.join("results", "experiment_runner")
 
 
 # ---------------------------------------------------------------------------

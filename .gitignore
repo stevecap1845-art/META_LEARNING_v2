@@ -1,5 +1,5 @@
-# Generated outputs
-results/
+# Scratch output of experiment_runner.py (phase results are tracked)
+results/experiment_runner/
 
 # Python cache
 __pycache__/
@@ -8,10 +8,8 @@ __pycache__/
 *.pyd
 .Python
 
-# Secrets: API keys live in .env (never committed)
+# API keys
 .env
-.env.*
-!.env.example
 
 # Virtual environments
 .venv/

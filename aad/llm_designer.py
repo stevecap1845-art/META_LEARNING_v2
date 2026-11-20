@@ -47,25 +47,6 @@ class LLMDesigner:
         self.config_space = config_space or EA_CONFIG_SPACE
         self._use_llm = api_key is not None
 
-    @classmethod
-    def from_env(cls, env_var: str = "GEMINI_API_KEY", **kwargs) -> "LLMDesigner":
-        """
-        Build a designer whose API key comes from the environment.
-
-        Reads *env_var* (loading a git-ignored ``.env`` file first when
-        python-dotenv is installed). Never hard-code keys in source files.
-        If the variable is unset, the designer runs in rule-based mode.
-        """
-        import os
-
-        try:
-            from dotenv import load_dotenv
-
-            load_dotenv()
-        except ImportError:
-            pass
-        return cls(api_key=os.getenv(env_var) or None, **kwargs)
-
     # ------------------------------------------------------------------
     # Rule-based fallback
     # ------------------------------------------------------------------
