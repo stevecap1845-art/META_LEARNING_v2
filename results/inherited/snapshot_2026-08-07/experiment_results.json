@@ -1,0 +1,1322 @@
+{
+  "BBOB_F1_Sphere": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 200
+      },
+      "best_performance": 0.00013814694728656607,
+      "meta_convergence": [
+        0.00013814694728656607,
+        0.00013814694728656607,
+        0.00013814694728656607,
+        0.00013814694728656607
+      ],
+      "elapsed_seconds": 2.85
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 4.2281929599548277e-10,
+        "mean_fitness": 2.8736909770234493e-09,
+        "std_fitness": 2.4508716810279666e-09,
+        "worst_fitness": 5.3245626580514155e-09,
+        "convergence_speed": 2.0,
+        "stability": 392022855.3390085,
+        "mean_runtime": 0.21298374998150393
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": 5.916159733722966e-25,
+        "mean_fitness": 1.1660613260291286e-23,
+        "std_fitness": 1.106899728691899e-23,
+        "worst_fitness": 2.2729610547210276e-23,
+        "convergence_speed": 2.5,
+        "stability": 9999999999.998894,
+        "mean_runtime": 0.505736799997976
+      }
+    }
+  },
+  "BBOB_F2_EllipsoidalSeparable": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "best_performance": 0.284396291498123,
+      "meta_convergence": [
+        0.284396291498123,
+        0.284396291498123,
+        0.284396291498123,
+        0.284396291498123
+      ],
+      "elapsed_seconds": 3.88
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 2.0624504868548255e-05,
+        "mean_fitness": 2.3516778281565222e-05,
+        "std_fitness": 2.8922734130169655e-06,
+        "worst_fitness": 2.6409051694582186e-05,
+        "convergence_speed": 2.5,
+        "stability": 345736.82481644856,
+        "mean_runtime": 0.20549449999816716
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": 1.0382736804476947e-19,
+        "mean_fitness": 3.2777683921455457e-18,
+        "std_fitness": 3.1739410241007762e-18,
+        "worst_fitness": 6.451709416246322e-18,
+        "convergence_speed": 3.0,
+        "stability": 9999999682.605907,
+        "mean_runtime": 0.8168277500371914
+      }
+    }
+  },
+  "BBOB_F3_RastriginSeparable": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 20,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "best_performance": 145108.78859635824,
+      "meta_convergence": [
+        145108.78859635824,
+        145108.78859635824,
+        145108.78859635824,
+        145108.78859635824
+      ],
+      "elapsed_seconds": 6.67
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 20.201575367123347,
+        "mean_fitness": 67.80859001790598,
+        "std_fitness": 47.60701465078264,
+        "worst_fitness": 115.41560466868862,
+        "convergence_speed": 2.0,
+        "stability": 0.021005307880221383,
+        "mean_runtime": 0.25943330000154674
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 20,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": 55.54169497813034,
+        "mean_fitness": 439.07913120004866,
+        "std_fitness": 383.53743622191837,
+        "worst_fitness": 822.616567421967,
+        "convergence_speed": 3.5,
+        "stability": 0.002607307411371259,
+        "mean_runtime": 0.21427530000801198
+      }
+    }
+  },
+  "BBOB_F4_BucheRastrigin": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "best_performance": 0.0045745604796520595,
+      "meta_convergence": [
+        0.0045745604796520595,
+        0.0045745604796520595,
+        0.0045745604796520595,
+        0.0045745604796520595
+      ],
+      "elapsed_seconds": 8.1
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 35.84614832779516,
+        "mean_fitness": 39.81350902883573,
+        "std_fitness": 3.967360701040569,
+        "worst_fitness": 43.7808697298763,
+        "convergence_speed": 6.0,
+        "stability": 0.2520567388068627,
+        "mean_runtime": 0.24842205000459217
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": 5.9697493047944326,
+        "mean_fitness": 6.964708361860939,
+        "std_fitness": 0.9949590570665072,
+        "worst_fitness": 7.959667418927447,
+        "convergence_speed": 10.0,
+        "stability": 1.005066482683065,
+        "mean_runtime": 0.9807230500155129
+      }
+    }
+  },
+  "BBOB_F5_LinearSlope": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 20,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 50
+      },
+      "best_performance": -225.71673981105457,
+      "meta_convergence": [
+        -204.34763060936018,
+        -214.5645192780999,
+        -222.10192153889315,
+        -225.71673981105457
+      ],
+      "elapsed_seconds": 2.03
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": -201.3679390288625,
+        "mean_fitness": -200.86945234303136,
+        "std_fitness": 0.4984866858311676,
+        "worst_fitness": -200.37096565720017,
+        "convergence_speed": 5.0,
+        "stability": 2.0060716328501553,
+        "mean_runtime": 0.13821875001303852
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 20,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 50
+      },
+      "metrics": {
+        "best_fitness": -194.08940653694555,
+        "mean_fitness": -184.28157627158404,
+        "std_fitness": 9.807830265361503,
+        "worst_fitness": -174.47374600622254,
+        "convergence_speed": 8.0,
+        "stability": 0.10195935012471849,
+        "mean_runtime": 0.03281265002442524
+      }
+    }
+  },
+  "BBOB_F6_AttractiveSector": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "best_performance": 202518471.81286824,
+      "meta_convergence": [
+        202518471.81286824,
+        202518471.81286824,
+        202518471.81286824,
+        202518471.81286824
+      ],
+      "elapsed_seconds": 4.99
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 631277078.2581013,
+        "mean_fitness": 750146561.1595495,
+        "std_fitness": 118869482.90144819,
+        "worst_fitness": 869016044.0609977,
+        "convergence_speed": 4.0,
+        "stability": 8.4125881226309e-09,
+        "mean_runtime": 0.2233553499681875
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": 212155516.53846183,
+        "mean_fitness": 268315687.224921,
+        "std_fitness": 56160170.68645917,
+        "worst_fitness": 324475857.9113802,
+        "convergence_speed": 7.5,
+        "stability": 1.7806213688041924e-08,
+        "mean_runtime": 0.4396060999715701
+      }
+    }
+  },
+  "BBOB_F7_StepEllipsoidal": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 100
+      },
+      "best_performance": 13725.04599677615,
+      "meta_convergence": [
+        13725.04599677615,
+        13725.04599677615,
+        13725.04599677615,
+        13725.04599677615
+      ],
+      "elapsed_seconds": 3.04
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 24553.81635274407,
+        "mean_fitness": 101393.73177750623,
+        "std_fitness": 76839.91542476215,
+        "worst_fitness": 178233.6472022684,
+        "convergence_speed": 4.5,
+        "stability": 1.3014069503748339e-05,
+        "mean_runtime": 0.1959181999845896
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 58485.65897124077,
+        "mean_fitness": 72695.22701411636,
+        "std_fitness": 14209.568042875595,
+        "worst_fitness": 86904.79505699196,
+        "convergence_speed": 1.5,
+        "stability": 7.037511604734345e-05,
+        "mean_runtime": 0.1943238000094425
+      }
+    }
+  },
+  "BBOB_F8_Rosenbrock": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 20,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "best_performance": 5.272690245926476,
+      "meta_convergence": [
+        5.272690245926476,
+        5.272690245926476,
+        5.272690245926476,
+        5.272690245926476
+      ],
+      "elapsed_seconds": 2.48
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 0.30010577025179125,
+        "mean_fitness": 3.229483574274502,
+        "std_fitness": 2.9293778040227103,
+        "worst_fitness": 6.158861378297212,
+        "convergence_speed": 2.0,
+        "stability": 0.3413694193328811,
+        "mean_runtime": 0.16872509999666363
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 20,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": 0.011373644005097978,
+        "mean_fitness": 34.51301353851713,
+        "std_fitness": 34.501639894512024,
+        "worst_fitness": 69.01465343302915,
+        "convergence_speed": 2.0,
+        "stability": 0.02898412953861262,
+        "mean_runtime": 0.1410862999910023
+      }
+    }
+  },
+  "BBOB_F9_RosenbrockRotated": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "best_performance": 3.958416738530461,
+      "meta_convergence": [
+        3.958416738530461,
+        3.958416738530461,
+        3.958416738530461,
+        3.958416738530461
+      ],
+      "elapsed_seconds": 4.48
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 4.376335125837173,
+        "mean_fitness": 5.729619257720538,
+        "std_fitness": 1.3532841318833655,
+        "worst_fitness": 7.082903389603904,
+        "convergence_speed": 3.5,
+        "stability": 0.7389431209352951,
+        "mean_runtime": 0.17141130001982674
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": 3.1290529525879665,
+        "mean_fitness": 5.464915733525005,
+        "std_fitness": 2.3358627809370383,
+        "worst_fitness": 7.800778514462043,
+        "convergence_speed": 2.5,
+        "stability": 0.4281073392316463,
+        "mean_runtime": 0.6293503500055522
+      }
+    }
+  },
+  "BBOB_F10_EllipsoidalRotated": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 50
+      },
+      "best_performance": 2728.7955207488903,
+      "meta_convergence": [
+        2728.7955207488903,
+        2728.7955207488903,
+        2728.7955207488903,
+        2728.7955207488903
+      ],
+      "elapsed_seconds": 3.41
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 1688.742654893187,
+        "mean_fitness": 1735.0150970404043,
+        "std_fitness": 46.27244214721725,
+        "worst_fitness": 1781.2875391876214,
+        "convergence_speed": 3.5,
+        "stability": 0.021611135129118688,
+        "mean_runtime": 0.19901374998153187
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 50
+      },
+      "metrics": {
+        "best_fitness": 3499.949009414338,
+        "mean_fitness": 8790.585200611253,
+        "std_fitness": 5290.636191196915,
+        "worst_fitness": 14081.221391808169,
+        "convergence_speed": 1.0,
+        "stability": 0.00018901318553407248,
+        "mean_runtime": 0.1970100500038825
+      }
+    }
+  },
+  "BBOB_F11_Discus": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "gaussian",
+        "max_generations": 200
+      },
+      "best_performance": 14.80486799477853,
+      "meta_convergence": [
+        14.80486799477853,
+        14.80486799477853,
+        14.80486799477853,
+        14.80486799477853
+      ],
+      "elapsed_seconds": 7.17
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 50.79327306154774,
+        "mean_fitness": 59.45844414769024,
+        "std_fitness": 8.6651710861425,
+        "worst_fitness": 68.12361523383274,
+        "convergence_speed": 2.5,
+        "stability": 0.11540453039498294,
+        "mean_runtime": 0.19697429999359883
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "gaussian",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": 15.116858693013505,
+        "mean_fitness": 30.45663810387148,
+        "std_fitness": 15.339779410857975,
+        "worst_fitness": 45.796417514729455,
+        "convergence_speed": 19.5,
+        "stability": 0.06518998567121831,
+        "mean_runtime": 0.7583298999816179
+      }
+    }
+  },
+  "BBOB_F12_BentCigar": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "gaussian",
+        "max_generations": 200
+      },
+      "best_performance": 56.3921661630619,
+      "meta_convergence": [
+        56.3921661630619,
+        56.3921661630619,
+        56.3921661630619,
+        56.3921661630619
+      ],
+      "elapsed_seconds": 6.54
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 4.264389783257294,
+        "mean_fitness": 34.98565016828139,
+        "std_fitness": 30.72126038502409,
+        "worst_fitness": 65.70691055330548,
+        "convergence_speed": 3.0,
+        "stability": 0.0325507478359912,
+        "mean_runtime": 0.18639004998840392
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "gaussian",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": 0.07853321426721445,
+        "mean_fitness": 8.353452872544581,
+        "std_fitness": 8.274919658277367,
+        "worst_fitness": 16.62837253082195,
+        "convergence_speed": 2.5,
+        "stability": 0.12084709474944805,
+        "mean_runtime": 0.7058525999891572
+      }
+    }
+  },
+  "BBOB_F13_SharpRidge": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "best_performance": 3670984.590463734,
+      "meta_convergence": [
+        6636466.228262573,
+        6636466.228262573,
+        6636466.228262573,
+        3670984.590463734
+      ],
+      "elapsed_seconds": 4.49
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 10886569.367103148,
+        "mean_fitness": 16789630.81500356,
+        "std_fitness": 5903061.447900413,
+        "worst_fitness": 22692692.262903973,
+        "convergence_speed": 5.5,
+        "stability": 1.6940362366644138e-07,
+        "mean_runtime": 0.1402521000127308
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 1689012.3412928581,
+        "mean_fitness": 3815203.520140709,
+        "std_fitness": 2126191.1788478508,
+        "worst_fitness": 5941394.69898856,
+        "convergence_speed": 17.5,
+        "stability": 4.7032459260878135e-07,
+        "mean_runtime": 0.270355099986773
+      }
+    }
+  },
+  "BBOB_F14_DifferentPowers": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 20,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "best_performance": 0.010222889550438846,
+      "meta_convergence": [
+        0.010222889550438846,
+        0.010222889550438846,
+        0.010222889550438846,
+        0.010222889550438846
+      ],
+      "elapsed_seconds": 2.86
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 0.0005176552491797285,
+        "mean_fitness": 0.0008748898205738257,
+        "std_fitness": 0.00035723457139409724,
+        "worst_fitness": 0.001232124391967923,
+        "convergence_speed": 5.0,
+        "stability": 2799.2803612749317,
+        "mean_runtime": 0.1489640500221867
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 20,
+        "selection": "roulette",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": 0.0026985914423796557,
+        "mean_fitness": 0.003922971616339156,
+        "std_fitness": 0.0012243801739594998,
+        "worst_fitness": 0.005147351790298655,
+        "convergence_speed": 7.0,
+        "stability": 816.7397182626271,
+        "mean_runtime": 0.12895605000085197
+      }
+    }
+  },
+  "BBOB_F15_RastriginRotated": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "best_performance": 18688808.822162773,
+      "meta_convergence": [
+        18688808.822162773,
+        18688808.822162773,
+        18688808.822162773,
+        18688808.822162773
+      ],
+      "elapsed_seconds": 21.29
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 30440734.532273773,
+        "mean_fitness": 118687503.09262024,
+        "std_fitness": 88246768.56034647,
+        "worst_fitness": 206934271.6529667,
+        "convergence_speed": 1.0,
+        "stability": 1.1331859696552654e-08,
+        "mean_runtime": 0.2628703000082169
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": 1007324.2987815173,
+        "mean_fitness": 24782883.696362272,
+        "std_fitness": 23775559.397580754,
+        "worst_fitness": 48558443.09394303,
+        "convergence_speed": 5.5,
+        "stability": 4.2059998811289944e-08,
+        "mean_runtime": 1.0380178499908652
+      }
+    }
+  },
+  "BBOB_F16_Weierstrass": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 100
+      },
+      "best_performance": 2.464415532493584,
+      "meta_convergence": [
+        2.464415532493584,
+        2.464415532493584,
+        2.464415532493584,
+        2.464415532493584
+      ],
+      "elapsed_seconds": 14.15
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 1.6477966246726796,
+        "mean_fitness": 7.184724736020216,
+        "std_fitness": 5.536928111347537,
+        "worst_fitness": 12.721652847367753,
+        "convergence_speed": 7.0,
+        "stability": 0.1806055595940484,
+        "mean_runtime": 0.42190459999255836
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 2.8274230274689236,
+        "mean_fitness": 3.2193149540921606,
+        "std_fitness": 0.391891926623237,
+        "worst_fitness": 3.6112068807153976,
+        "convergence_speed": 13.5,
+        "stability": 2.5517239111338537,
+        "mean_runtime": 0.8253450500196777
+      }
+    }
+  },
+  "BBOB_F17_SchaffersF7": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "best_performance": 6.243062264714389,
+      "meta_convergence": [
+        20.06463668618549,
+        20.06463668618549,
+        10.380977580231741,
+        6.243062264714389
+      ],
+      "elapsed_seconds": 7.1
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 35.01432718600979,
+        "mean_fitness": 46.32921888456844,
+        "std_fitness": 11.314891698558654,
+        "worst_fitness": 57.644110583127095,
+        "convergence_speed": 12.0,
+        "stability": 0.088379104867486,
+        "mean_runtime": 0.2358352500014007
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 11.585173498055772,
+        "mean_fitness": 21.75958147969085,
+        "std_fitness": 10.17440798163508,
+        "worst_fitness": 31.933989461325933,
+        "convergence_speed": 3.5,
+        "stability": 0.09828581690405797,
+        "mean_runtime": 0.4633489000261761
+      }
+    }
+  },
+  "BBOB_F18_SchaffersF7IllConditioned": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "best_performance": 21.56697832199621,
+      "meta_convergence": [
+        21.56697832199621,
+        21.56697832199621,
+        21.56697832199621,
+        21.56697832199621
+      ],
+      "elapsed_seconds": 3.95
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 5.484313288405171,
+        "mean_fitness": 24.66864521114584,
+        "std_fitness": 19.184331922740668,
+        "worst_fitness": 43.85297713388651,
+        "convergence_speed": 6.0,
+        "stability": 0.05212587042499042,
+        "mean_runtime": 0.24914274999173358
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": 33.29815451345472,
+        "mean_fitness": 36.64495954996623,
+        "std_fitness": 3.346805036511512,
+        "worst_fitness": 39.99176458647774,
+        "convergence_speed": 3.5,
+        "stability": 0.2987924271240056,
+        "mean_runtime": 0.48146270000142977
+      }
+    }
+  },
+  "BBOB_F19_GriewankRosenbrock": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 200
+      },
+      "best_performance": -7.407539616396159,
+      "meta_convergence": [
+        -6.778645815884397,
+        -7.319795830523068,
+        -7.407539616396159,
+        -7.407539616396159
+      ],
+      "elapsed_seconds": 7.26
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": -4.878926138333827,
+        "mean_fitness": -4.363202607192521,
+        "std_fitness": 0.5157235311413051,
+        "worst_fitness": -3.8474790760512168,
+        "convergence_speed": 3.0,
+        "stability": 1.9390234096805323,
+        "mean_runtime": 0.16571974998805672
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": -6.168326010856908,
+        "mean_fitness": -6.155880693281718,
+        "std_fitness": 0.012445317575190185,
+        "worst_fitness": -6.143435375706527,
+        "convergence_speed": 9.0,
+        "stability": 80.35150456572966,
+        "mean_runtime": 0.6483146000246052
+      }
+    }
+  },
+  "BBOB_F20_Schwefel": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 100
+      },
+      "best_performance": -1539.4421661954912,
+      "meta_convergence": [
+        -1408.5105413466138,
+        -1461.4321569964945,
+        -1512.8543930830608,
+        -1539.4421661954912
+      ],
+      "elapsed_seconds": 9.18
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": -1043.089930107189,
+        "mean_fitness": -1026.0181326677553,
+        "std_fitness": 17.07179743943385,
+        "worst_fitness": -1008.9463352283213,
+        "convergence_speed": 10.5,
+        "stability": 0.05857614018335642,
+        "mean_runtime": 0.21483945002546534
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": -1368.2021510075788,
+        "mean_fitness": -1296.3988614933482,
+        "std_fitness": 71.80328951423064,
+        "worst_fitness": -1224.5955719791175,
+        "convergence_speed": 25.5,
+        "stability": 0.013926938539499892,
+        "mean_runtime": 0.42225524998502806
+      }
+    }
+  },
+  "BBOB_F21_Gallagher101": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 50
+      },
+      "best_performance": 2.0189087631086524,
+      "meta_convergence": [
+        2.0189087631086524,
+        2.0189087631086524,
+        2.0189087631086524,
+        2.0189087631086524
+      ],
+      "elapsed_seconds": 17.94
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 2.2154666583325833,
+        "mean_fitness": 5.021828833833382,
+        "std_fitness": 2.806362175500799,
+        "worst_fitness": 7.828191009334181,
+        "convergence_speed": 6.0,
+        "stability": 0.3563331948720822,
+        "mean_runtime": 1.5351005499833263
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 50
+      },
+      "metrics": {
+        "best_fitness": 7.828218968096732,
+        "mean_fitness": 17.234690053533644,
+        "std_fitness": 9.40647108543691,
+        "worst_fitness": 26.641161138970553,
+        "convergence_speed": 5.0,
+        "stability": 0.10630979364169503,
+        "mean_runtime": 1.5462879499827977
+      }
+    }
+  },
+  "BBOB_F22_Gallagher21": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "best_performance": 25.56043061381486,
+      "meta_convergence": [
+        25.568024131422945,
+        25.56043061381486,
+        25.56043061381486,
+        25.56043061381486
+      ],
+      "elapsed_seconds": 12.56
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 25.560390466846886,
+        "mean_fitness": 26.89267203373799,
+        "std_fitness": 1.3322815668911048,
+        "worst_fitness": 28.224953600629096,
+        "convergence_speed": 4.0,
+        "stability": 0.7505920856192981,
+        "mean_runtime": 0.49227990000508726
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 200
+      },
+      "metrics": {
+        "best_fitness": 25.560390459422656,
+        "mean_fitness": 26.892672023431057,
+        "std_fitness": 1.332281564008401,
+        "worst_fitness": 28.224953587439458,
+        "convergence_speed": 6.0,
+        "stability": 0.7505920872433802,
+        "mean_runtime": 1.9289091499813367
+      }
+    }
+  },
+  "BBOB_F23_Katsuura": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "polynomial",
+        "max_generations": 50
+      },
+      "best_performance": 1.5279024865893862,
+      "meta_convergence": [
+        1.5279024865893862,
+        1.5279024865893862,
+        1.5279024865893862,
+        1.5279024865893862
+      ],
+      "elapsed_seconds": 20.11
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 1.1457658088329552,
+        "mean_fitness": 1.408503630892902,
+        "std_fitness": 0.26273782205994667,
+        "worst_fitness": 1.6712414529528485,
+        "convergence_speed": 7.0,
+        "stability": 3.8060755462577855,
+        "mean_runtime": 1.571517300006235
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "roulette",
+        "crossover": "sbx",
+        "mutation": "polynomial",
+        "max_generations": 50
+      },
+      "metrics": {
+        "best_fitness": 1.6519607056534795,
+        "mean_fitness": 1.8453274519590328,
+        "std_fitness": 0.19336674630555328,
+        "worst_fitness": 2.038694198264586,
+        "convergence_speed": 21.5,
+        "stability": 5.171520018766169,
+        "mean_runtime": 1.5785234499780927
+      }
+    }
+  },
+  "BBOB_F24_LunacekBiRastrigin": {
+    "meta_learning": {
+      "best_config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 50
+      },
+      "best_performance": 17.748102171883904,
+      "meta_convergence": [
+        25.358591038825853,
+        25.358591038825853,
+        17.748102171883904,
+        17.748102171883904
+      ],
+      "elapsed_seconds": 7.38
+    },
+    "llm_designer": {
+      "config": {
+        "population_size": 50,
+        "selection": "tournament",
+        "crossover": "sbx",
+        "mutation": "gaussian",
+        "max_generations": 100
+      },
+      "metrics": {
+        "best_fitness": 44.181022912616015,
+        "mean_fitness": 44.97471493688945,
+        "std_fitness": 0.7936920242734331,
+        "worst_fitness": 45.76840696116288,
+        "convergence_speed": 8.0,
+        "stability": 1.2599345455051452,
+        "mean_runtime": 0.205795300018508
+      }
+    },
+    "final_evaluation": {
+      "config": {
+        "population_size": 100,
+        "selection": "tournament",
+        "crossover": "uniform",
+        "mutation": "polynomial",
+        "max_generations": 50
+      },
+      "metrics": {
+        "best_fitness": 38.10823543507464,
+        "mean_fitness": 51.80338678056991,
+        "std_fitness": 13.695151345495265,
+        "worst_fitness": 65.49853812606517,
+        "convergence_speed": 3.0,
+        "stability": 0.07301854318839837,
+        "mean_runtime": 0.19136840000282973
+      }
+    }
+  }
+}

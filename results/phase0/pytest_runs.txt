@@ -1,0 +1,23 @@
+===== run 1, exit code 0 =====
+......................................................                   [100%]
+============================== warnings summary ===============================
+tests/test_aad.py::TestSurrogateModel::test_gp_fit_predict
+  D:\META_LEARNING_v2\Meta_Learning-20260807T110346Z-1-001\Meta_Learning\.venv\Lib\site-packages\sklearn\gaussian_process\kernels.py:445: ConvergenceWarning: The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified lower bound 1e-05. Decreasing the bound and calling fit again may find a better value.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+54 passed, 1 warning in 7.40s
+
+===== run 2, exit code 0 =====
+......................................................                   [100%]
+============================== warnings summary ===============================
+tests/test_aad.py::TestSurrogateModel::test_gp_fit_predict
+  D:\META_LEARNING_v2\Meta_Learning-20260807T110346Z-1-001\Meta_Learning\.venv\Lib\site-packages\sklearn\gaussian_process\kernels.py:445: ConvergenceWarning: The optimal value found for dimension 0 of parameter k2__length_scale is close to the specified lower bound 1e-05. Decreasing the bound and calling fit again may find a better value.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+54 passed, 1 warning in 10.99s
+
+===== run 3, exit code 0 =====
+......................................................                   [100%]
+54 passed in 9.80s

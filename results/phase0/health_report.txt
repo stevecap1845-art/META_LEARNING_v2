@@ -1,0 +1,162 @@
+Phase 0 health check
+
+date: 2026-11-20
+python: 3.11.9
+git_head: 79db7fd
+uncommitted_changes: True
+seed: 0
+minutes: 0.94
+
+PASS 70  FLAG 72  FAIL 0  SKIP 0
+
+== C1 ==
+[PASS] import aad (fresh process)
+[PASS] import aad.config_space (fresh process)
+[PASS] import aad.ea_components (fresh process)
+[PASS] import aad.evaluation (fresh process)
+[PASS] import aad.evolutionary_algorithm (fresh process)
+[PASS] import aad.landscape_features (fresh process)
+[PASS] import aad.llm_designer (fresh process)
+[PASS] import aad.mealpy_algorithms (fresh process)
+[PASS] import aad.meta_learner (fresh process)
+[PASS] import aad.problems (fresh process)
+[PASS] import aad.surrogate_model (fresh process)
+[PASS] import aad.visualization (fresh process)
+[PASS] import experiment_runner (fresh process)
+[PASS] every name in aad.__all__ exists: 53 names
+[FLAG] package for 'google.generativeai': not installed; imported at aad/llm_designer.py:117
+[PASS] package for 'matplotlib': installed, pinned as ['matplotlib']
+[PASS] package for 'matplotlib.pyplot': installed, pinned as ['matplotlib']
+[PASS] package for 'mealpy': installed, pinned as ['mealpy']
+[PASS] package for 'numpy': installed, pinned as ['numpy']
+[PASS] package for 'sklearn.ensemble': installed, pinned as ['scikit-learn']
+[PASS] package for 'sklearn.gaussian_process': installed, pinned as ['scikit-learn']
+[PASS] package for 'sklearn.gaussian_process.kernels': installed, pinned as ['scikit-learn']
+[PASS] package for 'sklearn.preprocessing': installed, pinned as ['scikit-learn']
+
+== C2 ==
+[PASS] build_algorithm({'algorithm': 'ea'}): EA(pop=50, gens=100, sel=tournament, cx=sbx, mut=gaussian)
+[FLAG] build_algorithm with no 'algorithm' key: builds MealpyAlgorithm(alg=PSO, pop=50, epochs=100); the docstring says the EA (D1)
+[PASS] build_algorithm reaches each of the 24 mealpy algorithms: each builds MealpyAlgorithm and its mealpy class instantiates
+[PASS] mealpy name lists agree (config_space, mealpy_algorithms, registry): 24, 24 and 24 names
+[FLAG] EA_Designer with EXTENDED_CONFIG_SPACE: 8 candidate runs; 8 named a mealpy algorithm ['CMA_ES', 'GJO', 'SCA', 'WOA'] but ran the EA (D2); returned best names 'CMA_ES'
+[PASS] problem SphereProblem: name SphereProblem, multi-objective False
+[PASS] problem RastriginProblem: name RastriginProblem, multi-objective False
+[PASS] problem RosenbrockProblem: name RosenbrockProblem, multi-objective False
+[PASS] problem AckleyProblem: name AckleyProblem, multi-objective False
+[PASS] problem ZDT1Problem: name ZDT1Problem, multi-objective True
+[PASS] problem ZDT2Problem: name ZDT2Problem, multi-objective True
+[PASS] problem BBOB_F1_Sphere: name BBOB_F1_Sphere, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 58.6 vs ioh reference 37.91 (ratio 1.55)
+[PASS] problem BBOB_F2_EllipsoidalSeparable: name BBOB_F2_EllipsoidalSeparable, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 3.248e+06 vs ioh reference 1.272e+07 (ratio 0.255)
+[FLAG] problem BBOB_F3_RastriginSeparable: name BBOB_F3_RastriginSeparable, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 3.535e+12 vs ioh reference 358.7 (ratio 9.86e+09), more than 10 times off (D12)
+[PASS] problem BBOB_F4_BucheRastrigin: name BBOB_F4_BucheRastrigin, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 372.3 vs ioh reference 571.6 (ratio 0.651)
+[FLAG] problem BBOB_F5_LinearSlope: name BBOB_F5_LinearSlope, multi-objective False, f(xopt) = -107.82, lowest value seen -107.82; below 0, which the official BBOB function (minus its optimum value) never gives inside [-5, 5]; median at 20 random points -16.41 vs ioh reference 91.36 (ratio -0.18), more than 10 times off (D12)
+[FLAG] problem BBOB_F6_AttractiveSector: name BBOB_F6_AttractiveSector, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 1.103e+15 vs ioh reference 8.649e+04 (ratio 1.28e+10), more than 10 times off (D12)
+[FLAG] problem BBOB_F7_StepEllipsoidal: name BBOB_F7_StepEllipsoidal, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 8.974e+07 vs ioh reference 508.2 (ratio 1.77e+05), more than 10 times off (D12)
+[PASS] problem BBOB_F8_Rosenbrock: name BBOB_F8_Rosenbrock, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 8.404e+04 vs ioh reference 3.648e+04 (ratio 2.3)
+[PASS] problem BBOB_F9_RosenbrockRotated: name BBOB_F9_RosenbrockRotated, multi-objective False, f(xopt) = 3192.89, lowest value seen 302.32; median at 20 random points 5.178e+04 vs ioh reference 4.813e+04 (ratio 1.08)
+[PASS] problem BBOB_F10_EllipsoidalRotated: name BBOB_F10_EllipsoidalRotated, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 9.357e+06 vs ioh reference 7.962e+06 (ratio 1.18)
+[PASS] problem BBOB_F11_Discus: name BBOB_F11_Discus, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 2.096e+06 vs ioh reference 1.289e+07 (ratio 0.163)
+[PASS] problem BBOB_F12_BentCigar: name BBOB_F12_BentCigar, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 4.654e+07 vs ioh reference 1.445e+08 (ratio 0.322)
+[FLAG] problem BBOB_F13_SharpRidge: name BBOB_F13_SharpRidge, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 5.847e+12 vs ioh reference 1650 (ratio 3.54e+09), more than 10 times off (D12)
+[PASS] problem BBOB_F14_DifferentPowers: name BBOB_F14_DifferentPowers, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 67.79 vs ioh reference 84.88 (ratio 0.799)
+[FLAG] problem BBOB_F15_RastriginRotated: name BBOB_F15_RastriginRotated, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 5.671e+12 vs ioh reference 543.9 (ratio 1.04e+10), more than 10 times off (D12)
+[PASS] problem BBOB_F16_Weierstrass: name BBOB_F16_Weierstrass, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 99.66 vs ioh reference 70.63 (ratio 1.41)
+[FLAG] problem BBOB_F17_SchaffersF7: name BBOB_F17_SchaffersF7, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 804.8 vs ioh reference 30.18 (ratio 26.7), more than 10 times off (D12)
+[PASS] problem BBOB_F18_SchaffersF7IllConditioned: name BBOB_F18_SchaffersF7IllConditioned, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 804.8 vs ioh reference 131.2 (ratio 6.14)
+[FLAG] problem BBOB_F19_GriewankRosenbrock: name BBOB_F19_GriewankRosenbrock, multi-objective False, f(xopt) = -1.50503, lowest value seen -1.50503; below 0, which the official BBOB function (minus its optimum value) never gives inside [-5, 5]; median at 20 random points 35.47 vs ioh reference 49.27 (ratio 0.72) (D12)
+[FLAG] problem BBOB_F20_Schwefel: name BBOB_F20_Schwefel, multi-objective False, f(xopt) = 1.3754, lowest value seen -374.596; below 0, which the official BBOB function (minus its optimum value) never gives inside [-5, 5]; median at 20 random points 3.209 vs ioh reference 5.85e+04 (ratio 5.49e-05), more than 10 times off (D12)
+[PASS] problem BBOB_F21_Gallagher101: name BBOB_F21_Gallagher101, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 78.66 vs ioh reference 62.41 (ratio 1.26)
+[PASS] problem BBOB_F22_Gallagher21: name BBOB_F22_Gallagher21, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 85.04 vs ioh reference 79.26 (ratio 1.07)
+[PASS] problem BBOB_F23_Katsuura: name BBOB_F23_Katsuura, multi-objective False, f(xopt) = 0, lowest value seen 0; median at 20 random points 22.4 vs ioh reference 20.84 (ratio 1.07)
+[PASS] problem BBOB_F24_LunacekBiRastrigin: name BBOB_F24_LunacekBiRastrigin, multi-objective False, f(xopt) = 88.8398, lowest value seen 68.6587; median at 20 random points 207.9 vs ioh reference 148.8 (ratio 1.4)
+[PASS] features: same keys, all finite, for 28 single-objective problems: 9 keys: ['dimension', 'fitness_max', 'fitness_mean', 'fitness_min', 'fitness_std', 'fitness_variance', 'gradient_magnitude', 'modality', 'ruggedness']
+
+== C3 ==
+[PASS] ea/tournament/sbx/gaussian on BBOB_F1_Sphere: best 0.40514, 220 evaluations, 0.0146 s
+[PASS] ea/tournament/sbx/gaussian on BBOB_F15_RastriginRotated: best 9.15051e+08, 220 evaluations, 0.0262 s
+[PASS] ea/tournament/sbx/polynomial on BBOB_F1_Sphere: best 0.47938, 220 evaluations, 0.0116 s
+[PASS] ea/tournament/sbx/polynomial on BBOB_F15_RastriginRotated: best 4.4174e+09, 220 evaluations, 0.0236 s
+[PASS] ea/tournament/uniform/gaussian on BBOB_F1_Sphere: best 0.133556, 220 evaluations, 0.0114 s
+[PASS] ea/tournament/uniform/gaussian on BBOB_F15_RastriginRotated: best 1.3685e+07, 220 evaluations, 0.0232 s
+[PASS] ea/tournament/uniform/polynomial on BBOB_F1_Sphere: best 0.489802, 220 evaluations, 0.0088 s
+[PASS] ea/tournament/uniform/polynomial on BBOB_F15_RastriginRotated: best 2.66194e+08, 220 evaluations, 0.0215 s
+[PASS] ea/roulette/sbx/gaussian on BBOB_F1_Sphere: best 0.511805, 220 evaluations, 0.0094 s
+[PASS] ea/roulette/sbx/gaussian on BBOB_F15_RastriginRotated: best 4.20938e+08, 220 evaluations, 0.0226 s
+[PASS] ea/roulette/sbx/polynomial on BBOB_F1_Sphere: best 0.125353, 220 evaluations, 0.007 s
+[PASS] ea/roulette/sbx/polynomial on BBOB_F15_RastriginRotated: best 2.0697e+09, 220 evaluations, 0.0192 s
+[PASS] ea/roulette/uniform/gaussian on BBOB_F1_Sphere: best 0.42155, 220 evaluations, 0.0074 s
+[PASS] ea/roulette/uniform/gaussian on BBOB_F15_RastriginRotated: best 3.7202e+07, 220 evaluations, 0.0192 s
+[PASS] ea/roulette/uniform/polynomial on BBOB_F1_Sphere: best 0.184201, 220 evaluations, 0.0061 s
+[PASS] ea/roulette/uniform/polynomial on BBOB_F15_RastriginRotated: best 2.1672e+08, 220 evaluations, 0.0173 s
+[FLAG] ABC on BBOB_F1_Sphere: 420 evaluations, not 220; same seed gave a different result
+[FLAG] ABC on BBOB_F15_RastriginRotated: 420 evaluations, not 220; same seed gave a different result
+[FLAG] AO on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] AO on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] AOA on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] AOA on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] ARO on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] ARO on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] BBO on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] BBO on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] CMA_ES on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] CMA_ES on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] DE on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] DE on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] EO on BBOB_F1_Sphere: 230 evaluations, not 220; same seed gave a different result
+[FLAG] EO on BBOB_F15_RastriginRotated: 230 evaluations, not 220; same seed gave a different result
+[FLAG] GA on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] GA on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] GJO on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] GJO on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] GWO on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] GWO on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] HBA on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] HBA on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] HHO on BBOB_F1_Sphere: 384 evaluations, not 220; same seed gave a different result; reported best 13.3825 differs from best evaluated 12.8042
+[FLAG] HHO on BBOB_F15_RastriginRotated: 394 evaluations, not 220; same seed gave a different result; reported best 2.47391e+08 differs from best evaluated 2.43365e+08
+[FLAG] JADE on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] JADE on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] L_SHADE on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] L_SHADE on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] MPA on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] MPA on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] MVO on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] MVO on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] PSO on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] PSO on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] RIME on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] RIME on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] SA on BBOB_F1_Sphere: 30 evaluations, not 220; same seed gave a different result
+[FLAG] SA on BBOB_F15_RastriginRotated: 30 evaluations, not 220; same seed gave a different result
+[FLAG] SCA on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] SCA on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] SHADE on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] SHADE on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] SMA on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] SMA on BBOB_F15_RastriginRotated: same seed gave a different result
+[FLAG] WOA on BBOB_F1_Sphere: same seed gave a different result
+[FLAG] WOA on BBOB_F15_RastriginRotated: same seed gave a different result
+
+== C4 ==
+[FLAG] feature extractor: evaluations: 850 evaluations for 300 sample points in dimension 5; 550 if each point were evaluated once (D7)
+[PASS] EA_Designer, surrogate off: 18 candidates run, 0 scored by the surrogate's prediction × 1.05 instead; returned best 0.024097 was a measured result
+[FLAG] EA_Designer, surrogate on: 6 candidates run, 12 scored by the surrogate's prediction × 1.05 instead, and those scores entered selection and the surrogate's training data; returned best 0.128944 was a measured result (D8)
+[FLAG] LLMDesigner rule-based proposal: {'population_size': 20, 'selection': 'roulette', 'crossover': 'sbx', 'mutation': 'gaussian', 'max_generations': 50}; values valid: True; it has no 'algorithm' key, so EvaluationFramework builds MealpyAlgorithm(alg=PSO, pop=20, epochs=50) (D1, D3)
+[FLAG] LLMDesigner description: 'BBOB_F1_Sphere optimisation problem. Dimension: 5. Search bounds: [-5.00, 5.00]. Single-objective continuous optimisation problem. Low-dimensional, potentially simple structure.' contains the problem's name (D4)
+[FLAG] LLMDesigner LLM mode (dummy key): returned {'population_size': 20, 'selection': 'roulette', 'crossover': 'sbx', 'mutation': 'gaussian', 'max_generations': 50}, a rule-based pick, with only a printed message: '[LLMDesigner] API call failed (No module named 'google.generativeai'). Falling back to rule-based proposal.' (D4)
+[PASS] EvaluationFramework.evaluate, 2 runs: best_fitness 0.40514 is the best of the 2 runs, mean 0.927896 (D10)
+[FLAG] EvaluationFramework, every evaluation NaN: no error and no failure flag: best_fitness=nan, mean_fitness=nan; compare_configs still returns a ranking of 2 (D10)
+[FLAG] EvaluationFramework, evaluation raises: the exception (evaluation failed) stops the whole evaluation; no run is recorded as failed (D10)
+[FLAG] SurrogateModel rf: two fits on the same data: largest difference 4.55e-13 between the two fits, 4.55e-13 when one model predicts twice (predictions near 1928); with n_jobs=1 instead of -1: 0 (D9)
+[FLAG] SurrogateModel rf: units of predict_with_uncertainty: mean in units of y (median 1928); spread returned as 0.4512, which is 334.7 in units of y (std of y = 741.9) (D9)
+[PASS] SurrogateModel gp: two fits on the same data: largest difference 0 between the two fits, 0 when one model predicts twice (predictions near 1829)
+[FLAG] SurrogateModel gp: units of predict_with_uncertainty: mean in units of y (median 1829); spread returned as 1e-05, which is 0.00742 in units of y (std of y = 741.9) (D9)
+[PASS] Visualizer: four plots: 4 of 4 files written
+[FLAG] run_experiment on one problem: finished; EvaluationFramework built ['MealpyAlgorithm(alg=PSO, pop=20, epochs=50)', 'MealpyAlgorithm(alg=PSO, pop=50, epochs=200)'] for the LLM designer's and the final evaluation (D1, D14)
+
+== C5 ==
+[PASS] pytest run 1: 54 passed, 1 warning in 7.40s
+[PASS] pytest run 2: 54 passed, 1 warning in 10.99s
+[PASS] pytest run 3: 54 passed in 9.80s
+[FLAG] public names never mentioned in tests/test_aad.py: 30 of 53: ['OptimizationProblem', 'BBOB_F1_Sphere', 'BBOB_F2_EllipsoidalSeparable', 'BBOB_F3_RastriginSeparable', 'BBOB_F4_BucheRastrigin', 'BBOB_F5_LinearSlope', 'BBOB_F6_AttractiveSector', 'BBOB_F7_StepEllipsoidal', 'BBOB_F8_Rosenbrock', 'BBOB_F9_RosenbrockRotated', 'BBOB_F10_EllipsoidalRotated', 'BBOB_F11_Discus', 'BBOB_F12_BentCigar', 'BBOB_F13_SharpRidge', 'BBOB_F14_DifferentPowers', 'BBOB_F15_RastriginRotated', 'BBOB_F16_Weierstrass', 'BBOB_F17_SchaffersF7', 'BBOB_F18_SchaffersF7IllConditioned', 'BBOB_F19_GriewankRosenbrock', 'BBOB_F20_Schwefel', 'BBOB_F21_Gallagher101', 'BBOB_F22_Gallagher21', 'BBOB_F23_Katsuura', 'BBOB_F24_LunacekBiRastrigin', 'build_algorithm', 'MealpyAlgorithm', 'MEALPY_REGISTRY', 'MEALPY_ALGORITHM_KEYS', 'EXTENDED_CONFIG_SPACE'] (D13)

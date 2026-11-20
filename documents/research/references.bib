@@ -1,0 +1,383 @@
+% References for the AAD meta-learning project.
+% Collected 2026-11-20. Each entry was checked against a publisher, arXiv,
+% DBLP or university repository page (abstract level; full texts not read).
+% Fields marked "note = {verify ...}" could not be confirmed and must be
+% checked before citing in a paper.
+
+% ---------------------------------------------------------------- foundations
+
+@incollection{rice1976algorithm,
+  author    = {Rice, John R.},
+  title     = {The Algorithm Selection Problem},
+  booktitle = {Advances in Computers},
+  volume    = {15},
+  pages     = {65--118},
+  publisher = {Academic Press},
+  year      = {1976},
+  doi       = {10.1016/S0065-2458(08)60520-3}
+}
+
+@article{wolpert1997nfl,
+  author  = {Wolpert, David H. and Macready, William G.},
+  title   = {No Free Lunch Theorems for Optimization},
+  journal = {IEEE Transactions on Evolutionary Computation},
+  volume  = {1},
+  number  = {1},
+  pages   = {67--82},
+  year    = {1997},
+  doi     = {10.1109/4235.585893}
+}
+
+@article{kerschke2019survey,
+  author  = {Kerschke, Pascal and Hoos, Holger H. and Neumann, Frank and Trautmann, Heike},
+  title   = {Automated Algorithm Selection: Survey and Perspectives},
+  journal = {Evolutionary Computation},
+  volume  = {27},
+  number  = {1},
+  pages   = {3--45},
+  year    = {2019},
+  doi     = {10.1162/evco_a_00242}
+}
+
+@article{hansen2021coco,
+  author  = {Hansen, Nikolaus and Auger, Anne and Ros, Raymond and Mersmann, Olaf and Tu{\v{s}}ar, Tea and Brockhoff, Dimo},
+  title   = {{COCO}: A Platform for Comparing Continuous Optimizers in a Black-Box Setting},
+  journal = {Optimization Methods and Software},
+  volume  = {36},
+  number  = {1},
+  pages   = {114--144},
+  year    = {2021},
+  doi     = {10.1080/10556788.2020.1808977}
+}
+
+@article{lopezibanez2016irace,
+  author  = {L{\'o}pez-Ib{\'a}{\~n}ez, Manuel and Dubois-Lacoste, J{\'e}r{\'e}mie and P{\'e}rez C{\'a}ceres, Leslie and Birattari, Mauro and St{\"u}tzle, Thomas},
+  title   = {The irace Package: Iterated Racing for Automatic Algorithm Configuration},
+  journal = {Operations Research Perspectives},
+  volume  = {3},
+  pages   = {43--58},
+  year    = {2016},
+  doi     = {10.1016/j.orp.2016.09.002}
+}
+
+@article{vanthieu2023mealpy,
+  author  = {Van Thieu, Nguyen and Mirjalili, Seyedali},
+  title   = {{MEALPY}: An Open-Source Library for Latest Meta-Heuristic Algorithms in {Python}},
+  journal = {Journal of Systems Architecture},
+  volume  = {139},
+  pages   = {102871},
+  year    = {2023},
+  doi     = {10.1016/j.sysarc.2023.102871},
+  note    = {The PyPI citation block for mealpy is wrong; use this one}
+}
+
+@article{ma2025metabbo,
+  author  = {Ma, Zeyuan and Guo, Hongshu and Gong, Yue-Jiao and Zhang, Jun and Tan, Kay Chen},
+  title   = {Toward Automated Algorithm Design: A Survey and Practical Guide to Meta-Black-Box-Optimization},
+  journal = {IEEE Transactions on Evolutionary Computation},
+  year    = {2025},
+  eprint  = {2411.00625},
+  archivePrefix = {arXiv},
+  note    = {verify volume and pages}
+}
+
+@article{adriaensen2022dac,
+  author  = {Adriaensen, Steven and Biedenkapp, Andr{\'e} and Shala, Gresa and Awad, Noor and Eimer, Theresa and Lindauer, Marius and Hutter, Frank},
+  title   = {Automated Dynamic Algorithm Configuration},
+  journal = {Journal of Artificial Intelligence Research},
+  volume  = {75},
+  pages   = {1633--1699},
+  year    = {2022},
+  doi     = {10.1613/jair.1.13922}
+}
+
+% --------------------------------------------------------- landscape features
+
+@inproceedings{mersmann2011ela,
+  author    = {Mersmann, Olaf and Bischl, Bernd and Trautmann, Heike and Preuss, Mike and Weihs, Claus and Rudolph, G{\"u}nter},
+  title     = {Exploratory Landscape Analysis},
+  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference (GECCO)},
+  pages     = {829--836},
+  publisher = {ACM},
+  year      = {2011},
+  doi       = {10.1145/2001576.2001690}
+}
+
+@article{prager2024pflacco,
+  author  = {Prager, Raphael Patrick and Trautmann, Heike},
+  title   = {Pflacco: Feature-Based Landscape Analysis of Continuous and Constrained Optimization Problems in {Python}},
+  journal = {Evolutionary Computation},
+  volume  = {32},
+  number  = {3},
+  pages   = {211--216},
+  year    = {2024},
+  doi     = {10.1162/evco_a_00341}
+}
+
+@inproceedings{renau2020sampling,
+  author    = {Renau, Quentin and Doerr, Carola and Dr{\'e}o, Johann and Doerr, Benjamin},
+  title     = {Exploratory Landscape Analysis is Strongly Sensitive to the Sampling Strategy},
+  booktitle = {Parallel Problem Solving from Nature (PPSN XVI)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12270},
+  pages     = {139--153},
+  publisher = {Springer},
+  year      = {2020},
+  eprint    = {2006.11135},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{vanstein2023doe2vec,
+  author    = {van Stein, Bas and others},
+  title     = {{DoE2Vec}: Deep-Learning Based Features for Exploratory Landscape Analysis},
+  booktitle = {Proceedings of the Companion Conference on Genetic and Evolutionary Computation (GECCO '23 Companion)},
+  pages     = {515--518},
+  publisher = {ACM},
+  year      = {2023},
+  eprint    = {2304.01219},
+  archivePrefix = {arXiv},
+  note      = {verify full author list}
+}
+
+@article{seiler2025deepela,
+  author  = {Seiler, Moritz Vinzent and Kerschke, Pascal and Trautmann, Heike},
+  title   = {{Deep-ELA}: Deep Exploratory Landscape Analysis with Self-Supervised Pretrained Transformers for Single- and Multi-Objective Continuous Optimization Problems},
+  journal = {Evolutionary Computation},
+  volume  = {33},
+  number  = {4},
+  year    = {2025},
+  eprint  = {2401.01192},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{cenikj2024transoptas,
+  author    = {Cenikj, Gjorgjina and Petelin, Ga{\v{s}}per and Eftimov, Tome},
+  title     = {{TransOptAS}: Transformer-Based Algorithm Selection for Single-Objective Optimization},
+  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '24 Companion)},
+  publisher = {ACM},
+  year      = {2024},
+  doi       = {10.1145/3638530.3654191}
+}
+
+% ------------------------------------- feature-based selection and configuration
+
+@article{kerschke2019automated,
+  author  = {Kerschke, Pascal and Trautmann, Heike},
+  title   = {Automated Algorithm Selection on Continuous Black-Box Problems by Combining Exploratory Landscape Analysis and Machine Learning},
+  journal = {Evolutionary Computation},
+  volume  = {27},
+  number  = {1},
+  pages   = {99--127},
+  year    = {2019},
+  doi     = {10.1162/evco_a_00236}
+}
+
+@inproceedings{belkhir2017piac,
+  author    = {Belkhir, Nacim and Dr{\'e}o, Johann and Sav{\'e}ant, Pierre and Schoenauer, Marc},
+  title     = {Per Instance Algorithm Configuration of {CMA-ES} with Limited Budget},
+  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference (GECCO)},
+  pages     = {681--688},
+  publisher = {ACM},
+  year      = {2017},
+  doi       = {10.1145/3071178.3071343}
+}
+
+@misc{jankovic2020fixedbudget,
+  author  = {Jankovic, Anja and Doerr, Carola},
+  title   = {Landscape-Aware Fixed-Budget Performance Regression and Algorithm Selection for Modular {CMA-ES} Variants},
+  year    = {2020},
+  eprint  = {2006.09855},
+  archivePrefix = {arXiv},
+  note    = {GECCO 2020; verify pages and DOI}
+}
+
+@inproceedings{long2024landscape,
+  author    = {Long, Fu Xing and Frenzel, Moritz and Krause, Peter and Gitterle, Markus and B{\"a}ck, Thomas and van Stein, Niki},
+  title     = {Landscape-Aware Automated Algorithm Configuration Using Multi-Output Mixed Regression and Classification},
+  booktitle = {Lecture Notes in Computer Science},
+  publisher = {Springer},
+  year      = {2024},
+  doi       = {10.1007/978-3-031-70068-2_6},
+  eprint    = {2409.01446},
+  archivePrefix = {arXiv},
+  note      = {verify the conference name (likely PPSN XVIII)}
+}
+
+@inproceedings{kostovska2022perrun,
+  author    = {Kostovska, Ana and Jankovic, Anja and Vermetten, Diederick and de Nobel, Jacob and Wang, Hao and Eftimov, Tome and Doerr, Carola},
+  title     = {Per-Run Algorithm Selection with Warm-Starting Using Trajectory-Based Features},
+  booktitle = {Parallel Problem Solving from Nature (PPSN XVII)},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {13398},
+  pages     = {46--60},
+  publisher = {Springer},
+  year      = {2022},
+  doi       = {10.1007/978-3-031-14714-2_4}
+}
+
+% ------------------------------------------------ generalisation and evaluation
+
+@inproceedings{vermetten2023mabbob,
+  author    = {Vermetten, Diederick and Ye, Furong and B{\"a}ck, Thomas and Doerr, Carola},
+  title     = {{MA-BBOB}: Many-Affine Combinations of {BBOB} Functions for Evaluating {AutoML} Approaches in Noiseless Numerical Black-Box Optimization Contexts},
+  booktitle = {Proceedings of the International Conference on Automated Machine Learning (AutoML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {224},
+  year      = {2023},
+  eprint    = {2306.10627},
+  archivePrefix = {arXiv}
+}
+
+@misc{vermetten2024mabbobgen,
+  author  = {Vermetten, Diederick and Ye, Furong and B{\"a}ck, Thomas and Doerr, Carola},
+  title   = {{MA-BBOB}: A Problem Generator for Black-Box Optimization Using Affine Combinations and Shifts},
+  eprint  = {2312.11083},
+  archivePrefix = {arXiv},
+  note    = {journal version in ACM Transactions on Evolutionary Learning and Optimization; verify year, volume and DOI}
+}
+
+@inproceedings{dietrich2024training,
+  author    = {Dietrich, Konstantin and Vermetten, Diederick and Doerr, Carola and Kerschke, Pascal},
+  title     = {Impact of Training Instance Selection on Automated Algorithm Selection Models for Numerical Black-Box Optimization},
+  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference (GECCO)},
+  pages     = {1007--1016},
+  publisher = {ACM},
+  year      = {2024},
+  eprint    = {2404.07539},
+  archivePrefix = {arXiv}
+}
+
+@article{cenikj2025wall,
+  author  = {Cenikj, Gjorgjina and Petelin, Ga{\v{s}}per and Seiler, Moritz and Cenikj, Nikola and Eftimov, Tome},
+  title   = {Landscape Features in Single-Objective Continuous Optimization: Have We Hit a Wall in Algorithm Selection Generalization?},
+  journal = {Swarm and Evolutionary Computation},
+  volume  = {94},
+  pages   = {101894},
+  year    = {2025},
+  eprint  = {2501.17663},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{petelin2025pitfalls,
+  author    = {Petelin, Ga{\v{s}}per and Cenikj, Gjorgjina},
+  title     = {The Pitfalls of Benchmarking in Algorithm Selection: What We Are Getting Wrong},
+  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference (GECCO)},
+  publisher = {ACM},
+  year      = {2025},
+  doi       = {10.1145/3712256.3726336},
+  eprint    = {2505.07750},
+  archivePrefix = {arXiv},
+  note      = {venue taken from the DOI; the ACM page could not be read, verify}
+}
+
+@misc{cenikj2026realworld,
+  author  = {Cenikj, Gjorgjina and Kudela, Jakub and Tuba, Eva and Eftimov, Tome},
+  title   = {Evaluating Real-World Generalizability of Algorithm Selection Models},
+  year    = {2026},
+  eprint  = {2606.02016},
+  archivePrefix = {arXiv}
+}
+
+@misc{wang2026geopas,
+  author  = {Wang, Jiabao Brad and Shi, Xiang and Yuan, Yiliang and M{\i}s{\i}r, Mustafa},
+  title   = {Geometric Probing for Algorithm Selection in Continuous Black-Box Optimization},
+  year    = {2026},
+  eprint  = {2604.09095},
+  archivePrefix = {arXiv},
+  note    = {extended journal version of a GECCO Companion 2026 paper}
+}
+
+% ------------------------------------------- LLM-driven design and selection
+
+@article{romeraparedes2024funsearch,
+  author  = {Romera-Paredes, Bernardino and others},
+  title   = {Mathematical Discoveries from Program Search with Large Language Models},
+  journal = {Nature},
+  volume  = {625},
+  year    = {2024},
+  doi     = {10.1038/s41586-023-06924-6},
+  note    = {verify pages and full author list}
+}
+
+@inproceedings{liu2024eoh,
+  author    = {Liu, Fei and Tong, Xialiang and Yuan, Mingxuan and Lin, Xi and Luo, Fu and Wang, Zhenkun and Lu, Zhichao and Zhang, Qingfu},
+  title     = {Evolution of Heuristics: Towards Efficient Automatic Algorithm Design Using Large Language Model},
+  booktitle = {Proceedings of the 41st International Conference on Machine Learning (ICML)},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {235},
+  year      = {2024},
+  eprint    = {2401.02051},
+  archivePrefix = {arXiv}
+}
+
+@article{vanstein2025llamea,
+  author  = {van Stein, Niki and B{\"a}ck, Thomas},
+  title   = {{LLaMEA}: A Large Language Model Evolutionary Algorithm for Automatically Generating Metaheuristics},
+  journal = {IEEE Transactions on Evolutionary Computation},
+  volume  = {29},
+  number  = {2},
+  pages   = {331--345},
+  year    = {2025},
+  doi     = {10.1109/TEVC.2024.3497793}
+}
+
+@inproceedings{vanstein2025blade,
+  author    = {van Stein, Niki and Kononova, Anna V. and Yin, Haoran and B{\"a}ck, Thomas},
+  title     = {{BLADE}: Benchmark Suite for {LLM}-Driven Automated Design and Evolution of Iterative Optimisation Heuristics},
+  booktitle = {Proceedings of the Genetic and Evolutionary Computation Conference Companion (GECCO '25 Companion)},
+  year      = {2025},
+  eprint    = {2504.20183},
+  archivePrefix = {arXiv}
+}
+
+@misc{huang2026priors,
+  author  = {Huang, Qi and Ye, Furong and Shahane, Ananta and B{\"a}ck, Thomas and van Stein, Niki},
+  title   = {From Heuristic Selection to Automated Algorithm Design: {LLMs} Benefit from Strong Priors},
+  year    = {2026},
+  eprint  = {2603.02792},
+  archivePrefix = {arXiv}
+}
+
+@misc{yin2026landscape,
+  author  = {Yin, Haoran and Pan, Shuaiqun and Wei, Zhao and Wong, Jian Cheng and Ong, Yew-Soon and Kononova, Anna V. and B{\"a}ck, Thomas and van Stein, Niki},
+  title   = {Landscape-Aware Automated Algorithm Design: An Efficient Framework for Real-World Optimization},
+  year    = {2026},
+  eprint  = {2602.04529},
+  archivePrefix = {arXiv}
+}
+
+@misc{lian2025opal,
+  author  = {Lian, Junbo Jacob and others},
+  title   = {{OPAL}: Operator-Programmed Algorithms for Landscape-Aware Black-Box Optimization},
+  year    = {2025},
+  eprint  = {2512.12809},
+  archivePrefix = {arXiv},
+  note    = {verify full author list}
+}
+
+@inproceedings{xu2026autoep,
+  author    = {Xu, Zhenxing and Zhang, Yizhe and Bao, Weidong and Wang, Hao and Chen, Ming and Ye, Haoran and Jiang, Wenzheng and Yan, Hui and Wang, Ji},
+  title     = {{AutoEP}: {LLMs}-Driven Automation of Hyperparameter Evolution for Metaheuristic Algorithms},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2026},
+  eprint    = {2509.23189},
+  archivePrefix = {arXiv}
+}
+
+@inproceedings{wu2024asllm,
+  author    = {Wu, Xingyu and Zhong, Yan and Wu, Jibin and Jiang, Bingbing and Tan, Kay Chen},
+  title     = {Large Language Model-Enhanced Algorithm Selection: Towards Comprehensive Algorithm Representation},
+  booktitle = {Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence (IJCAI)},
+  pages     = {5235--5244},
+  year      = {2024},
+  doi       = {10.24963/ijcai.2024/579}
+}
+
+@misc{yamada2026bbowp,
+  author  = {Yamada, Yutaro and others},
+  title   = {{BBOWP-Bench}: Evaluating {LLMs} on Black-Box Optimization Word Problems},
+  year    = {2026},
+  eprint  = {2608.02612},
+  archivePrefix = {arXiv},
+  note    = {listed as a NeurIPS 2026 poster; verify venue and full author list}
+}
