@@ -4,6 +4,13 @@ Drafted 2026-11-20. Part B was rewritten the same day from a reading of this
 repository's code only; nothing from earlier rounds is used. Part A
 (environment) is done. Part B (health check) is waiting for review.
 
+Update 2026-11-23: Part B was approved and run on 2026-11-20. A follow-up
+audit (`scripts/phase0_audit.py`), asked for after the run, checked the 24
+BBOB classes, the algorithms' settings and what `experiment_runner.py` runs.
+What was found and decided is in
+[../../context/phase0_context.md](../../context/phase0_context.md), §5 to §8.
+Phase 0 was closed on 2026-11-23.
+
 Phase 0 produces no research result. It shows that the tools work and lists
 what in the code is broken, so that Phase 2 knows what to fix.
 

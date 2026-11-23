@@ -1,0 +1,25 @@
+algorithm,mealpy_class,passed_by_framework,left_at_default,default_pop_size
+ABC,mealpy.swarm_based.ABC.OriginalABC,"epoch, pop_size",{'n_limits': 25},100
+AO,mealpy.swarm_based.AO.OriginalAO,"epoch, pop_size",none,100
+AOA,mealpy.math_based.AOA.OriginalAOA,"epoch, pop_size","{'alpha': 5, 'miu': 0.5, 'moa_min': 0.2, 'moa_max': 0.9}",100
+ARO,mealpy.swarm_based.ARO.OriginalARO,"epoch, pop_size",none,100
+BBO,mealpy.bio_based.BBO.OriginalBBO,"epoch, pop_size","{'p_m': 0.01, 'n_elites': 2}",100
+CMA_ES,mealpy.evolutionary_based.ES.CMA_ES,"epoch, pop_size",none,100
+DE,mealpy.evolutionary_based.DE.OriginalDE,"epoch, pop_size","{'wf': 0.1, 'cr': 0.9, 'strategy': 0}",100
+EO,mealpy.physics_based.EO.OriginalEO,"epoch, pop_size",none,100
+GA,mealpy.evolutionary_based.GA.BaseGA,"epoch, pop_size","{'pc': 0.95, 'pm': 0.025}",100
+GJO,mealpy.swarm_based.GJO.OriginalGJO,"epoch, pop_size",none,100
+GWO,mealpy.swarm_based.GWO.OriginalGWO,"epoch, pop_size",none,100
+HBA,mealpy.swarm_based.HBA.OriginalHBA,"epoch, pop_size",none,100
+HHO,mealpy.swarm_based.HHO.OriginalHHO,"epoch, pop_size",none,100
+JADE,mealpy.evolutionary_based.DE.JADE,"epoch, pop_size","{'miu_f': 0.5, 'miu_cr': 0.5, 'pt': 0.1, 'ap': 0.1}",100
+L_SHADE,mealpy.evolutionary_based.SHADE.L_SHADE,"epoch, pop_size","{'miu_f': 0.5, 'miu_cr': 0.5}",100
+MPA,mealpy.swarm_based.MPA.OriginalMPA,"epoch, pop_size",none,100
+MVO,mealpy.physics_based.MVO.OriginalMVO,"epoch, pop_size","{'wep_min': 0.2, 'wep_max': 1.0}",100
+PSO,mealpy.swarm_based.PSO.OriginalPSO,"epoch, pop_size","{'c1': 2.05, 'c2': 2.05, 'w': 0.4}",100
+RIME,mealpy.physics_based.RIME.OriginalRIME,"epoch, pop_size",{'sr': 5.0},100
+SA,mealpy.physics_based.SA.OriginalSA,"epoch, pop_size","{'temp_init': 100, 'step_size': 0.1}",2
+SCA,mealpy.math_based.SCA.OriginalSCA,"epoch, pop_size",none,100
+SHADE,mealpy.evolutionary_based.SHADE.OriginalSHADE,"epoch, pop_size","{'miu_f': 0.5, 'miu_cr': 0.5}",100
+SMA,mealpy.bio_based.SMA.OriginalSMA,"epoch, pop_size",{'p_t': 0.03},100
+WOA,mealpy.swarm_based.WOA.OriginalWOA,"epoch, pop_size",none,100

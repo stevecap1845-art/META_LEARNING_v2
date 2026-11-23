@@ -1,7 +1,7 @@
 # Current state of the work
 
 Update this file at the end of every working session.
-Last updated: 2026-11-20.
+Last updated: 2026-11-23.
 
 ## Summary
 
@@ -14,8 +14,9 @@ settings, a surrogate and meta-learner trained across problems, and a
 comparison with an LLM given the same features
 ([research/research_gap.md](research/research_gap.md)). The project is split
 into 13 phases in [planning/project_plan.md](planning/project_plan.md). Phase 0
-was finished on 2026-11-20: the health check found 15 defects, and each will
-be fixed when the work first needs that part of the code.
+ran on 2026-11-20 and was closed on 2026-11-23: the health check and a
+follow-up audit found 18 defects, and each will be fixed when the work first
+needs that part of the code.
 
 ## Done
 
@@ -30,6 +31,8 @@ be fixed when the work first needs that part of the code.
 | 2026-11-20 | Research gap rewritten around the owner's plan: meta-learner vs LLM, both choosing an algorithm and its settings from pflacco features, on unseen problems at an equal budget | [research/research_gap.md](research/research_gap.md) |
 | 2026-11-20 | Project plan in 13 phases (0 to 12), each with tasks, outputs and a "done when" check; the plan from before the restart moved to `archive/` | [planning/project_plan.md](planning/project_plan.md) |
 | 2026-11-20 | Phase 0 health check (C1 to C6), its plan rewritten from this repository's code: 70 checks pass, 72 flagged, 0 fail; tests pass 3 times out of 3; 15 defects confirmed and each given the phase that fixes it | [phase0_context.md §5 to §7](context/phase0_context.md#5-health-check-part-b-2026-11-20), `results/phase0/health_report.txt` |
+| 2026-11-20 | Follow-up audit of the 24 BBOB classes, the algorithms' settings and what `experiment_runner.py` runs: 6 BBOB classes correct, 2 off by a constant, 16 wrong; no algorithm tuned; 3 new defects (D16 to D18) | [phase0_context.md §8](context/phase0_context.md#8-follow-up-audit-2026-11-20), `results/phase0/audit_report.txt` |
+| 2026-11-23 | Phase 0 closed: plans brought up to date, the follow-up audit and its results committed and pushed | [phase0_context.md §10](context/phase0_context.md#10-closing-2026-11-23) |
 
 ## Waiting on you
 
@@ -47,14 +50,17 @@ be fixed when the work first needs that part of the code.
 
 ## Known problems in this code
 
-Confirmed by the Phase 0 health check on 2026-11-20. Nothing is fixed yet: by
-the owner's decision, each defect is fixed when the work first uses that part
-of the code. Details and evidence are in
-[phase0_context.md §6](context/phase0_context.md#6-defects-and-decisions).
+Confirmed by the Phase 0 health check and its follow-up audit on 2026-11-20.
+Nothing is fixed yet: by the owner's decision, each defect is fixed when the
+work first uses that part of the code. Details and evidence are in
+[phase0_context.md §6](context/phase0_context.md#6-defects-and-decisions) and
+§8.
 
 | Fix in | Defects |
 |---|---|
-| Phase 2 | D1 a configuration without `algorithm` runs PSO; D2 `EA_Designer` always runs the EA; D3 defaults to the space without `algorithm`; D5 no seeds (mealpy never repeats); D6 no evaluation budget (30 to 420 evaluations for the same settings); D10 failed runs not recorded, best-of-runs reported; D12 9 of 24 home-made BBOB functions wrong (use ioh instead); D13 missing and unseeded tests; D15 an algorithm can report a worse best than it evaluated |
+| Phase 1 | D16 decide each candidate's fixed settings: no algorithm is tuned, and mealpy's default DE (F = 0.1) is no better than random search on the sphere |
+| Phase 2 | D1 a configuration without `algorithm` runs PSO; D2 `EA_Designer` always runs the EA; D3 defaults to the space without `algorithm`; D5 no seeds (mealpy never repeats); D6 no evaluation budget (30 to 420 evaluations for the same settings); D10 failed runs not recorded, best-of-runs reported; D12 16 of 24 home-made BBOB functions wrong and 2 off by a constant (use ioh instead); D13 missing and unseeded tests; D15 an algorithm can report a worse best than it evaluated; D16 pass the settings chosen in Phase 1; D17 set each algorithm's generation count from the budget, since evaluations per generation differ and several algorithms plan on the generation count |
+| Phase 3 | D18 AO, AOA and mealpy's CMA_ES worse than random search at 5,000 evaluations; BBO, HHO and SA on one function each |
 | Phase 4 | D7 home-made features: double evaluation, misleading names (only if they are used) |
 | Phase 7 | D8 surrogate predictions treated as measured results; D9 uncertainty in the wrong units, RF not exactly repeatable |
 | Phase 8 | D4 the Gemini client is not installed, so every LLM call silently becomes a rule-based pick; the problem's name is in the prompt |

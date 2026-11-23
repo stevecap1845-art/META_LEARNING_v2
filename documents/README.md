@@ -61,7 +61,7 @@ The full plan, with tasks and "done when" checks for each phase, is in
 
 | Phase | Name | Planning | Context | Results | Status |
 |---|---|---|---|---|---|
-| 0 | Environment and code health | [phase0_plan.md](planning/phase0/phase0_plan.md) | [phase0_context.md](context/phase0_context.md) | [results/phase0/](../results/phase0/) | done 2026-11-20: health check run, 15 defects each assigned to a phase |
+| 0 | Environment and code health | [phase0_plan.md](planning/phase0/phase0_plan.md) | [phase0_context.md](context/phase0_context.md) | [results/phase0/](../results/phase0/) | closed 2026-11-23: health check and follow-up audit run 2026-11-20, 18 defects each assigned to a phase |
 | 1 | Experimental rules | in project plan | none yet | none yet | not started |
 | 2 | Code foundations | in project plan | none yet | none yet | not started |
 | 3 | Screening and timing pilot | in project plan | none yet | none yet | not started |

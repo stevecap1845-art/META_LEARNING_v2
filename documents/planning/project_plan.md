@@ -34,7 +34,7 @@ them beats both, and find out where each one wins.
 
 | Phase | Name | Question it answers | Depends on | Effort (rough) |
 |---|---|---|---|---|
-| 0 | Environment and code health | Does the code run, and what is broken? | none | 1 to 2 days (setup done) |
+| 0 | Environment and code health | Does the code run, and what is broken? | none | 1 to 2 days (done) |
 | 1 | Experimental rules | What are the rules every later phase follows? | 0 | 1 to 2 days |
 | 2 | Code foundations | Can every candidate run fairly, seeded and within budget? | 1 | 1 to 2 weeks |
 | 3 | Screening and timing pilot | Which candidates work, and what does the full study cost? | 2 | 3 to 5 days |
@@ -76,25 +76,33 @@ compute estimates with measured ones.
 ## Phase 0: Environment and code health
 
 Show that the environment can be rebuilt and find out what in the code is
-broken, before any research. Setup is done (see
-[../context/phase0_context.md](../context/phase0_context.md)); the health check
-is not.
+broken, before any research. Done: the checks ran on 2026-11-20 and the phase
+was closed on 2026-11-23 (see
+[../context/phase0_context.md](../context/phase0_context.md)).
 
 Tasks:
 1. Done: Python 3.11.9 in the project folder, `.venv` and `.venv-pflacco` from
    the pinned files, git and GitHub, baseline tests (54 pass).
 2. Done 2026-11-20: Part B of `planning/phase0/phase0_plan.md` rewritten from
    this repository's code, with a defect register (D1 to D14), and run. The
-   defects (D1 to D15 after the run) and the phase that fixes each are in the
-   Phase 0 context document, §6.
-3. Import every module; run every algorithm on a tiny problem twice with the
-   same seed and check it finishes, gives a finite result, repeats exactly
-   and stays within its budget.
-4. List every defect found, including the four known ones in
+   defects (D1 to D15 after the run, D1 to D18 after the follow-up audit in
+   task 5) and the phase that fixes each are in the Phase 0 context document,
+   §6.
+3. Done 2026-11-20 (health check C1 and C3): import every module; run every
+   algorithm on a tiny problem twice with the same seed and check it
+   finishes, gives a finite result, repeats exactly and stays within its
+   budget.
+4. Done 2026-11-20: list every defect found, including the four known ones in
    `CURRENT_STATE.md`, and decide for each: fix in Phase 2, or leave.
+   Outcome: each defect is fixed in the phase that first uses that part of
+   the code, so some go to phases other than 2 (context §6).
+5. Done 2026-11-20, added after task 2: a follow-up audit of the 24 BBOB
+   classes, the algorithms' settings and what `experiment_runner.py` runs
+   (`scripts/phase0_audit.py`, context §8).
 
-Outputs: `results/phase0/health_report.txt`, a defect list with decisions in
-the Phase 0 context document.
+Outputs: `results/phase0/health_report.txt` and the audit files
+`results/phase0/audit_*`, a defect list with decisions in the Phase 0 context
+document.
 
 Done when: every module imports, every algorithm has been run, and every
 defect has a decision.

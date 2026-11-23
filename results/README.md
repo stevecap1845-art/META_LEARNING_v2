@@ -30,6 +30,12 @@ something (for example paid API answers).
 | `phase0/health_report.{txt,json}` | health check C1 to C5 from `scripts/phase0_health_check.py`: 70 pass, 72 flag, 0 fail | yes, 2026-11-20, seed 0, commit `79db7fd` (now `606e64d`, same files) plus uncommitted changes | about 1 min, all four files together |
 | `phase0/algorithm_runs.csv` | C3: one row per run, 32 algorithms × 2 problems × 2 runs (evaluations counted, best reported and best evaluated, seconds) | yes, same run | with the above |
 | `phase0/pytest_runs.txt` | C5: full output of `pytest tests` run three times | yes, same run | with the above |
+| `phase0/audit_report.txt` | follow-up audit from `scripts/phase0_audit.py`: printed summary of all parts below | yes, 2026-11-20, seed 0, commit `c111ef8` plus the audit script, committed unchanged on 2026-11-23 | about 6 min, all audit files together |
+| `phase0/audit_bbob.csv` | audit part 1: each of the 24 BBOB classes against ioh (instance 1) or the official definition, dimensions 5 and 10 | yes, same run | with the above |
+| `phase0/audit_algorithm_defaults.csv` | audit part 2a: the mealpy parameters the framework leaves at their defaults | yes, same run | with the above |
+| `phase0/audit_evaluations_per_epoch.csv` | audit part 2b: evaluations each algorithm spends per generation through the framework | yes, same run | with the above |
+| `phase0/audit_equal_budget_runs.csv` | audit part 2c: every algorithm at 5,000 evaluations on ioh F1, F10 and F15 (d = 5), 5 seeds, against random search | yes, same run | with the above |
+| `phase0/audit_runner_trace.csv` | audit part 3: what `run_experiment` builds and runs for each of its 24 default problems | yes, same run | with the above |
 
 ## Inherited (not evidence)
 

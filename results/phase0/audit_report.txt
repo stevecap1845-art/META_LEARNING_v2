@@ -1,0 +1,123 @@
+== Part 1: BBOB classes, 200 random points in [-5, 5]^d, ioh instance 1 as reference ==
+unrotated functions: class given ioh's optimum, compared with ioh; rotated: class compared with the
+official definition built from the class's own xopt, R and Q
+F1  median class/ioh      1.27  class vs ioh, same optimum: max rel diff 2.75e-16
+F2  median class/ioh      0.94  class vs ioh, same optimum: max rel diff 7.39e-16
+F3  median class/ioh  1.06e+10  class vs ioh, same optimum: max rel diff 7.6e+10; definition vs ioh: max rel diff 1.5e-15
+F4  median class/ioh     0.355  class vs ioh, same optimum: max rel diff 0.978; definition vs ioh: max rel diff 9.93e-16
+F5  median class/ioh  -0.00421  class vs ioh, same optimum: max rel diff 2.45, constant offset -204.3; definition vs ioh: max rel diff 3.76e-16
+F6  median class/ioh  9.08e+08  class vs definition, class's own matrices: max rel diff 5.5e+10; definition vs ioh: medians over 10 instances: ioh 2.45e+05 to 9.96e+05, definition 2.54e+05 to 9.6e+05
+F7  median class/ioh  5.08e+04  class vs definition, class's own matrices: max rel diff 5.6e+05; definition vs ioh: medians over 10 instances: ioh 793 to 1.45e+03, definition 696 to 1.38e+03
+F8  median class/ioh      1.86  class vs ioh, same optimum: max rel diff 4.52e-16
+F9  median class/ioh      1.04  class vs definition, class's own matrices: max rel diff 0; definition vs ioh: medians over 10 instances: ioh 1.3e+05 to 1.59e+05, definition 1.38e+05 to 1.63e+05
+F10 median class/ioh     0.401  class vs definition, class's own matrices: max rel diff 0.369; definition vs ioh: medians over 10 instances: ioh 8.21e+06 to 2.47e+07, definition 7.42e+06 to 1.24e+07
+F11 median class/ioh      1.54  class vs definition, class's own matrices: max rel diff 345; definition vs ioh: medians over 10 instances: ioh 3.14e+06 to 2.53e+07, definition 2.91e+06 to 3.69e+07
+F12 median class/ioh      1.28  class vs definition, class's own matrices: max rel diff 4.31e-16; definition vs ioh: medians over 10 instances: ioh 2.44e+08 to 2.83e+09, definition 1.74e+08 to 1.25e+09
+F13 median class/ioh  3.51e+07  class vs definition, class's own matrices: max rel diff 4.88e+08; definition vs ioh: medians over 10 instances: ioh 1.92e+03 to 2.67e+03, definition 1.96e+03 to 2.35e+03
+F14 median class/ioh     0.674  class vs definition, class's own matrices: max rel diff 0; definition vs ioh: medians over 10 instances: ioh 82.8 to 165, definition 65.6 to 143
+F15 median class/ioh  1.33e+10  class vs definition, class's own matrices: max rel diff 7.07e+10; definition vs ioh: medians over 10 instances: ioh 679 to 1.38e+03, definition 584 to 1.22e+03
+F16 median class/ioh      1.08  class vs definition, class's own matrices: max rel diff 3.3; definition vs ioh: medians over 10 instances: ioh 74.5 to 83.1, definition 76.7 to 85.8
+F17 median class/ioh      19.1  class vs definition, class's own matrices: max rel diff 130; definition vs ioh: medians over 10 instances: ioh 19.1 to 83.1, definition 21.8 to 56.1
+F18 median class/ioh      5.13  class vs definition, class's own matrices: max rel diff 30.3; definition vs ioh: medians over 10 instances: ioh 80.5 to 375, definition 84 to 204
+F19 median class/ioh     0.839  class vs definition, class's own matrices: max rel diff 0.901, constant offset -8.889; definition vs ioh: medians over 10 instances: ioh 47.1 to 55.5, definition 48.1 to 56.7
+F20 median class/ioh    0.0002  class vs ioh, same optimum: max rel diff 1.02; definition vs ioh: max rel diff 4.8e-16
+F21 median class/ioh      1.05  parameters compared by reading
+F22 median class/ioh      1.02  parameters compared by reading
+F23 median class/ioh       0.9  class vs definition, class's own matrices: max rel diff 3.53; definition vs ioh: medians over 10 instances: ioh 14.9 to 17, definition 14 to 16.2
+F24 median class/ioh      1.24  class vs definition, class's own matrices: max rel diff 0.693; definition vs ioh: medians over 10 instances: ioh 348 to 363, definition 337 to 360
+
+== Part 2a: parameters the framework leaves at mealpy's defaults ==
+ABC      {'n_limits': 25}
+AO       no other parameters
+AOA      {'alpha': 5, 'miu': 0.5, 'moa_min': 0.2, 'moa_max': 0.9}
+ARO      no other parameters
+BBO      {'p_m': 0.01, 'n_elites': 2}
+CMA_ES   no other parameters
+DE       {'wf': 0.1, 'cr': 0.9, 'strategy': 0}
+EO       no other parameters
+GA       {'pc': 0.95, 'pm': 0.025}
+GJO      no other parameters
+GWO      no other parameters
+HBA      no other parameters
+HHO      no other parameters
+JADE     {'miu_f': 0.5, 'miu_cr': 0.5, 'pt': 0.1, 'ap': 0.1}
+L_SHADE  {'miu_f': 0.5, 'miu_cr': 0.5}
+MPA      no other parameters
+MVO      {'wep_min': 0.2, 'wep_max': 1.0}
+PSO      {'c1': 2.05, 'c2': 2.05, 'w': 0.4}
+RIME     {'sr': 5.0}
+SA       {'temp_init': 100, 'step_size': 0.1}
+SCA      no other parameters
+SHADE    {'miu_f': 0.5, 'miu_cr': 0.5}
+SMA      {'p_t': 0.03}
+WOA      no other parameters
+
+== Part 2b: evaluations used through the framework (ioh F1, d=5) ==
+ea       pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+ABC      pop 20: 20 at start + 40 per generation; pop 40: 40 + 80
+AO       pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+AOA      pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+ARO      pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+BBO      pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+CMA_ES   pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+DE       pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+EO       pop 20: 20 at start + 21 per generation; pop 40: 40 + 41
+GA       pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+GJO      pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+GWO      pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+HBA      pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+HHO      pop 20: 6 at start + 37.4 per generation; pop 40: 148 + 68.8
+JADE     pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+L_SHADE  pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+MPA      pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+MVO      pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+PSO      pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+RIME     pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+SA       pop 20: 20 at start + 1 per generation; pop 40: 40 + 1
+SCA      pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+SHADE    pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+SMA      pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+WOA      pop 20: 20 at start + 20 per generation; pop 40: 40 + 40
+
+== Part 2c: equal budget (5000 evaluations, d=5, population 20, ioh F(1, 10, 15) instance 1, seeds [0, 1, 2, 3, 4]); median best f - fopt ==
+random_search                      F1      1.881  F10       5572  F15      29.32
+ea/tournament/sbx/gaussian         F1  0.0001247  F10       4350  F15      15.27
+ea/tournament/sbx/polynomial       F1  6.149e-06  F10      377.5  F15      15.42
+ea/tournament/uniform/gaussian     F1  9.836e-05  F10       1211  F15      10.07
+ea/tournament/uniform/polynomial   F1  1.392e-05  F10      152.8  F15      15.99
+ea/roulette/sbx/gaussian           F1  0.0001216  F10       2380  F15      10.18
+ea/roulette/sbx/polynomial         F1  6.968e-06  F10        108  F15      8.967
+ea/roulette/uniform/gaussian       F1  5.764e-05  F10      564.7  F15      13.19
+ea/roulette/uniform/polynomial     F1  4.493e-06  F10      163.1  F15      14.94
+ABC                                F1  1.421e-14  F10       2298  F15      8.904
+AO                                 F1      5.314  F10  1.308e+04  F15      35.98
+AOA                                F1      8.759  F10  1.271e+05  F15      124.7
+ARO                                F1  2.331e-08  F10      484.2  F15      9.058
+BBO                                F1    0.01659  F10  1.556e+04  F15      21.08
+CMA_ES                             F1      1.483  F10  1.802e+04  F15      78.87
+DE                                 F1      2.128  F10       5469  F15      25.25
+EO                                 F1          0  F10      16.59  F15      4.062
+GA                                 F1    0.01501  F10       3754  F15      23.88
+GJO                                F1     0.1985  F10      891.6  F15      14.84
+GWO                                F1  6.311e-05  F10      204.6  F15      6.142
+HBA                                F1  1.169e-06  F10      295.3  F15      6.489
+HHO                                F1    0.02021  F10  1.593e+04  F15      19.15
+JADE                               F1          0  F10  1.086e-10  F15      3.267
+L_SHADE                            F1          0  F10  9.712e-09  F15      3.394
+MPA                                F1  6.902e-10  F10      1.411  F15      2.985
+MVO                                F1  1.248e-05  F10      88.14  F15      5.973
+PSO                                F1          0  F10       8.84  F15      6.965
+RIME                               F1  5.534e-06  F10      70.68  F15      8.035
+SA                                 F1   0.002983  F10      20.71  F15      56.95
+SCA                                F1   0.002531  F10      258.7  F15      7.732
+SHADE                              F1          0  F10  1.066e-13  F15      2.314
+SMA                                F1   1.52e-05  F10      631.2  F15         11
+WOA                                F1  0.0008177  F10       4355  F15       11.7
+DE_F0.5                            F1          0  F10      12.73  F15      2.006
+PSO_constriction                   F1  0.0001275  F10       1649  F15      22.12
+no better than random search on F1 (sphere): ['AO', 'AOA', 'DE']
+
+== Part 3: run_experiment on its 24 default problems (BBOB, dim 10, default seed), meta-search cut to 2 configurations x 1 generation x 1 run ==
+24 problems ran. Meta-search algorithm keys seen: ['no algorithm key']
+LLM designer's evaluation built: ['MealpyAlgorithm(alg=PSO']
+final evaluation built: ['MealpyAlgorithm(alg=PSO']
